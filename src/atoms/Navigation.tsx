@@ -19,12 +19,7 @@ const Navigation = () => {
         <div className="md:flex items-center justify-between bg-white py-4 md:px-10 px-7">
           <div className="cursor-pointer flex items-center">
             <span className=" mr-1 pt-2">
-              <Image
-                src="/Images/Logo.svg"
-                alt="logo"
-                width={100}
-                height={100}
-              />
+              <img src="/Images/Logo.svg" alt="logo" />
             </span>
           </div>
 

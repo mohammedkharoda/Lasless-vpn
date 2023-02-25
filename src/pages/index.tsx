@@ -1,5 +1,9 @@
 import Head from "next/head";
 import HeroHeader from "@/components/HeroHeader";
+import Navigation from "@/atoms/Navigation";
+import MaxWrapper from "@/atoms/MaxWrapper";
+import SecondaryWrapper from "@/atoms/SecondaryWrapper";
+import OverallData from "@/components/OverallData";
 
 const Home = () => {
   return (
@@ -15,7 +19,13 @@ const Home = () => {
         />
       </Head>
       <main>
-        <HeroHeader />
+        <MaxWrapper>
+          <SecondaryWrapper>
+            <Navigation />
+            <HeroHeader />
+            <OverallData />
+          </SecondaryWrapper>
+        </MaxWrapper>
       </main>
     </>
   );
