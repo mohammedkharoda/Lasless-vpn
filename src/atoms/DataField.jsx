@@ -26,7 +26,7 @@ const DataField = () => {
           </div>
           <div>
             <div className="text-[25px] text-dark-blue-lz leading-7 font-bold">
-              500
+              50+ 
             </div>
             <div className="font-normal text-[20px] leading-7">Server</div>
           </div>
