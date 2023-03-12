@@ -5,7 +5,7 @@ import { FaServer } from "react-icons/fa";
 const DataField = () => {
   const infoGraphics = [
     {
-      icon: <AiOutlineLine />,
+      icon: <BsFillPersonFill />,
       text: "90+",
       desc: "Users",
     },
@@ -22,7 +22,7 @@ const DataField = () => {
           {infoGraphics.map((info) => {
             return (
               <>
-                <div className="bg-orange-light-lz w-fit p-[16px] rounded-full">
+                <div className="bg-orange-light-lz w-fit flex items-center p-5 rounded-full">
                   <div className="text-orange-lz">{info.icon}</div>
                 </div>
                 <div>
