@@ -2,7 +2,6 @@ import React from "react";
 import { UilServer } from "@iconscout/react-unicons";
 import { UilUser } from "@iconscout/react-unicons";
 import { UilLocationPoint } from "@iconscout/react-unicons";
-import { AiOutlineLine } from "react-icons/ai";
 const DataField = () => {
   const infoGraphics = [
     {
@@ -22,12 +21,12 @@ const DataField = () => {
     },
   ];
   return (
-    <div>
-      <div className="bg-white drop-shadow-lg w-full  py-[37px] px-[90px] mt-10">
-        <div className="flex gap-4">
-          {infoGraphics.map((info, index) => {
-            return (
-              <>
+    <div className="bg-white drop-shadow-lg w-full  py-[37px] px-[90px] mt-10">
+      <div className="flex justify-between">
+        {infoGraphics.map((info) => {
+          return (
+            <>
+              <div className="flex gap-5">
                 <div className="bg-orange-light-lz w-fit flex items-center p-5 rounded-full">
                   <div className="text-orange-lz">{info.icon}</div>
                 </div>
@@ -39,15 +38,10 @@ const DataField = () => {
                     {info.desc}
                   </div>
                 </div>
-                {index !== infoGraphics.length - 1 && (
-                  <div className="rotate-90">
-                    <AiOutlineLine size={55} className="text-gray-lz" />
-                  </div>
-                )}
-              </>
-            );
-          })}
-        </div>
+              </div>
+            </>
+          );
+        })}
       </div>
     </div>
   );

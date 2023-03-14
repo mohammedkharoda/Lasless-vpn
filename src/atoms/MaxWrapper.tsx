@@ -2,7 +2,7 @@ import React from "react";
 
 const MaxWrapper = (props: any) => {
   return (
-    <div id="MaxWrapper" className="max-w-[1600px] w-[100%] m-auto">
+    <div id="MaxWrapper" className="max-w-[1600px] mx-auto">
       {props.children}
     </div>
   );

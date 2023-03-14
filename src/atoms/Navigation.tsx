@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React, { useState } from "react";
 import Button from "./Buttons";
 import { HiMenu } from "react-icons/hi";
@@ -15,7 +14,7 @@ const Navigation = () => {
 
   return (
     <>
-      <div className="shadow-md w-full fixed top-0 left-0">
+      <div className="shadow-md w-full relative top-0 left-0">
         <div className="md:flex items-center justify-between bg-white py-4 md:px-10 px-7">
           <div className="cursor-pointer flex items-center">
             <span className=" mr-1 pt-2">

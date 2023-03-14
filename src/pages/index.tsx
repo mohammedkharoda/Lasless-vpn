@@ -4,6 +4,7 @@ import Navigation from "@/atoms/Navigation";
 import MaxWrapper from "@/atoms/MaxWrapper";
 import SecondaryWrapper from "@/atoms/SecondaryWrapper";
 import OverallData from "@/components/OverallData";
+import Features from "@/components/Features";
 
 const Home = () => {
   return (
@@ -24,6 +25,7 @@ const Home = () => {
             <Navigation />
             <HeroHeader />
             <OverallData />
+            <Features />
           </SecondaryWrapper>
         </MaxWrapper>
       </main>
