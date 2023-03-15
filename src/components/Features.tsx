@@ -16,7 +16,7 @@ const Features = () => {
     },
   ];
   return (
-    <div className="flex justify-between  gap-10">
+    <div className="flex justify-between gap-10 mt-[5rem]">
       <div id="feature-image">
         <img src="/Images/Features.svg" alt="Illustration-2" />
       </div>

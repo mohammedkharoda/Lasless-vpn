@@ -5,6 +5,7 @@ import MaxWrapper from "@/atoms/MaxWrapper";
 import SecondaryWrapper from "@/atoms/SecondaryWrapper";
 import OverallData from "@/components/OverallData";
 import Features from "@/components/Features";
+import ChoosePlan from "@/components/ChoosePlan";
 
 const Home = () => {
   return (
@@ -26,6 +27,7 @@ const Home = () => {
             <HeroHeader />
             <OverallData />
             <Features />
+            <ChoosePlan />
           </SecondaryWrapper>
         </MaxWrapper>
       </main>

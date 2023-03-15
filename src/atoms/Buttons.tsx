@@ -3,14 +3,17 @@ import React, { FC } from "react";
 interface Props {
   label: string;
   outline?: boolean;
+  navbar: boolean;
 }
 
-const Button: FC<Props> = ({ label, outline }) => {
+const Button: FC<Props> = ({ label, outline, navbar }) => {
   return (
     <button
       className={`${
         outline
-          ? `border-orange-lz border-2 text-[16px] text-pinkish-lz font-normal font-rubik py-2 px-6 rounded-[50px] md:ml-8 hover:bg-orange-light-lz
+          ? `border-orange-lz border-2 text-[16px] text-pinkish-lz font-normal font-rubik py-2 px-6 rounded-[50px] ${
+              navbar ? "md:ml-8" : ""
+            } hover:bg-orange-light-lz
       duration-500`
           : `text-dark-blue-lz font-normal text-[16px] leading-1 font-rubik  py-2 px-2 md:ml-8 `
       }`}

@@ -54,8 +54,8 @@ const Navigation = () => {
             <div
               className={`flex flex-col justify-center items-start gap-4 md:block`}
             >
-              <Button label="Sign In" outline={false} />
-              <Button label="Sign Up" outline={true} />
+              <Button label="Sign In" outline={false} navbar={true} />
+              <Button label="Sign Up" outline={true} navbar={true} />
             </div>
           </div>
         </div>
