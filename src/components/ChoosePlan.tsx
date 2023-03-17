@@ -43,7 +43,11 @@ const ChoosePlan = () => {
       tick: "/Images/ticks.svg",
     },
   ];
-
+  // display: flex;
+  // flex-direction: column;
+  // align-items: baseline;
+  // justify-content: space-between;
+  // width: 100%;
   return (
     <div>
       <div className="mt-16">
@@ -55,26 +59,29 @@ const ChoosePlan = () => {
           and cheerfully.
         </p>
       </div>
-      <div className="flex gap-5">
+      <div className="flex gap-5 justify-center max-h-[760px]">
         {Plans.map((plans) => {
           return (
-            <div className="border-[2px] rounded-xl w-fit py-[60px] px-[70px] mt-5 border-gray-lz">
+            <div className="border-[2px] rounded-xl py-[60px]  mt-5 border-gray-lz flex flex-col justify-between w-full">
               <div className="flex flex-col gap-10 items-center">
                 <div>
                   <img src={plans.image} />
                 </div>
-                <div className="flex flex-col gap-10">
-                  <p className="text-[18px] font-rubik leading-[30px] font-medium text-center">
-                    {plans.currentPlan}
-                  </p>
-                  <div className="flex gap-5">
-                    <img src={plans.tick} />
-                    <p className="w-full">{plans.features}</p>
-                  </div>
+                <div className="w-full flex flex-col gap-5 items-center">
+                  {plans.features.map((plan) => {
+                    return (
+                      <>
+                        <div className="flex gap-5">
+                          <img src={plans.tick} />
+                          <p key={plan.length}>{plan}</p>
+                        </div>
+                      </>
+                    );
+                  })}
                 </div>
               </div>
-              <div className="mx-auto mt-8 flex flex-col gap-5">
-                <p className="text-center font-rubik font-medium text-[25px] leading-[30px]">
+              <div className="mx-auto flex flex-col gap-5">
+                <p className="text-center font-rubik font-medium text-[25px] leading-[30px] mt-8">
                   {plans.price}
                 </p>
                 <Button label="Select" outline={true} navbar={false} />
