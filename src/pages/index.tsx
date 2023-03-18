@@ -6,7 +6,9 @@ import SecondaryWrapper from "@/atoms/SecondaryWrapper";
 import OverallData from "@/components/OverallData";
 import Features from "@/components/Features";
 import ChoosePlan from "@/components/ChoosePlan";
-
+import HugeGlobalNetwork from "@/components/HugeGlobalNetwork";
+import Partner from "@/components/Partners";
+import Reviews from "@/components/Reviews";
 const Home = () => {
   return (
     <>
@@ -28,6 +30,9 @@ const Home = () => {
             <OverallData />
             <Features />
             <ChoosePlan />
+            <HugeGlobalNetwork />
+            <Partner />
+            <Reviews />
           </SecondaryWrapper>
         </MaxWrapper>
       </main>
