@@ -9,6 +9,7 @@ import ChoosePlan from "@/components/ChoosePlan";
 import HugeGlobalNetwork from "@/components/HugeGlobalNetwork";
 import Partner from "@/components/Partners";
 import Reviews from "@/components/Reviews";
+import Subscribe from "@/components/Subscribe";
 const Home = () => {
   return (
     <>
@@ -33,6 +34,7 @@ const Home = () => {
             <HugeGlobalNetwork />
             <Partner />
             <Reviews />
+            <Subscribe />
           </SecondaryWrapper>
         </MaxWrapper>
       </main>

@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "npm run dev",
     "lint": "next lint"
   },
   "dependencies": {
@@ -27,10 +27,11 @@
     "react-dom": "18.2.0",
     "react-icons": "^4.7.1",
     "scrollreveal": "^4.0.9",
-    "swiper": "^9.0.5",
+    "swiper": "^9.1.1",
     "typescript": "4.9.5"
   },
   "devDependencies": {
+    "@types/swiper": "^6.0.0",
     "opn": "^6.0.0",
     "tailwindcss": "^3.2.7",
     "webpack-cli": "^5.0.1",
