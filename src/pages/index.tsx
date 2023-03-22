@@ -10,6 +10,7 @@ import HugeGlobalNetwork from "@/components/HugeGlobalNetwork";
 import Partner from "@/components/Partners";
 import Reviews from "@/components/Reviews";
 import Subscribe from "@/components/Subscribe";
+import Footer from "@/components/Footer";
 const Home = () => {
   return (
     <>
@@ -35,6 +36,7 @@ const Home = () => {
             <Partner />
             <Reviews />
             <Subscribe />
+            <Footer />
           </SecondaryWrapper>
         </MaxWrapper>
       </main>
