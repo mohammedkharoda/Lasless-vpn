@@ -2,8 +2,8 @@ import React from "react";
 
 const Subscribe = () => {
   return (
-    <div className="rounded-[15px] border-gray-lz">
-      <div className="flex justify-around w-full my-10 items-center">
+    <div className="bg-orange-light-lz rounded-[15px] border-gray-lz drop-shadow-2xl mb-16">
+      <div className="flex justify-around w-full px-[70px] py-[60px] items-center">
         {/* Outer subscribe div */}
         <div className="flex flex-col">
           {/* subscribe */}

@@ -1,4 +1,5 @@
 import React from "react";
+import FooterDetails from "@/atoms/FooterDetails";
 
 const Footer = () => {
   const currentYear = new Date();
@@ -6,7 +7,7 @@ const Footer = () => {
   return (
     <div>
       {/* outer div */}
-      <div>
+      <div id="footer-outer-div" className="flex justify-between">
         {/* for the brand logo and other description */}
         <div className="flex flex-col gap-4">
           {/* img*/}
@@ -21,7 +22,9 @@ const Footer = () => {
           </p>
         </div>
         {/* for the 3 section that is being after the logo and description */}
-        <div></div>
+        <div className="my-4">
+          <FooterDetails />
+        </div>
       </div>
     </div>
   );
